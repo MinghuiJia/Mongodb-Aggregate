@@ -1,0 +1,32 @@
+{
+  "name": "zhihu_data_process_with_mongodb",
+  "version": "1.1.1",
+  "description": "针对爬取的知乎回答，使用mongodb的聚合操作完成数据清洗",
+  "main": "src/main.js",
+  "scripts": {
+    "run": "ts-node ./src/aggregateOp.ts"
+  },
+  "keywords": [
+    "知乎",
+    "mongodb"
+  ],
+  "author": "jiadobe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "humps": "^2.0.1",
+    "minimist": "^1.2.6",
+    "mongodb": "^6.3.0",
+    "puppeteer": "^18.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.2",
+    "@types/puppeteer": "^5.4.6",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "prettier": "2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
