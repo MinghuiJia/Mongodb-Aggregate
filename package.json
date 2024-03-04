@@ -4,7 +4,8 @@
   "description": "针对爬取的知乎回答，使用mongodb的聚合操作完成数据清洗",
   "main": "src/main.js",
   "scripts": {
-    "run": "ts-node ./src/aggregateOp.ts"
+    "run": "ts-node ./src/aggregateOp.ts",
+    "run2": "ts-node ./src/flatten.ts"
   },
   "keywords": [
     "知乎",

@@ -1,11 +1,3 @@
-/*
- * @Author: jiaminghui
- * @Date: 2024-03-03 20:24:04
- * @LastEditTime: 2024-03-04 11:05:14
- * @LastEditors: jiaminghui
- * @FilePath: \zhihu_data_process\src\aggregateOp.ts
- * @Description: 
- */
 import { MongoClient } from "mongodb";
 
 // 设置mongodb相关的配置信息
@@ -29,8 +21,8 @@ const flattenComments = (answer, comment, depth) => {
     "comment_author_name": comment.author.name,
     "comment_content": text,
     "comment_created_time": comment["created_time"],
-    "comment_like_count": comment["like_count"],
-    "comment_voteup_count": comment["child_comment_count"],
+    "comment_voteup_count": comment["like_count"],
+    "comment_comment_count": comment["child_comment_count"],
     // The rest of the fields you need...
   };
 
